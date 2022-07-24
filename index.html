@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миграционный Центр Помощи</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Inter', sans-serif; -->
+
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/media.min.css">
+
+</head>
+
+<body>
+
+    <main>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__main">
+                    <div class="nav__logo">
+                        <img class="nav__img" src="./img/nav/logo.svg" alt="">
+                        <p class="nav__text">Миграционный <br><span>центр помощи</span></p>
+                    </div>
+
+                    <a href="tel:8888888888" class="nav__btn btn bg-blue">Позвоните мне</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Первая карточка -->
+        <div class="first">
+            <div class="container">
+                <div class="first__content">
+                    <h1 class="title__first title-general">Нужно гражданство РФ, <br>
+                        РВП или ВНЖ?</h1>
+                    <p class="first__text">Ответьте на 5 вопросов и получите <br> Гражданство РФ <span>за 2 дня</span>
+                    </p>
+                    <img class="fisrt__mob" src="./img/first-step/img-mob.png" alt="">
+                    <button class="first__btn bg-red btn">Начать опрос</button>
+                </div>
+                <img class="first__desctop" src="./img/first-step/img.png" alt="">
+            </div>
+        </div>
+
+        <!-- При Ласт-Степе Этот блок скрывается -->
+        <div style="display: none;" class="steps">
+            <div class="container">
+
+                <div class="steps__content">
+                    <div class="check">
+                        <div class="check-step passed"></div>
+                        <div class="check-step passed"></div>
+                        <div class="check-step passed"></div>
+                        <div class="check-step active"></div>
+                        <div class="check-step"></div>
+                        <div class="check-step"></div>
+                    </div>
+                    <h2 class="steps__title title">Есть ли у Вас близкие родственники,<br>
+                        являющиеся гражданами РФ?</h2>
+
+                    <div class="form">
+                        <div class="form-question">
+                            <label for="radio" class="label-question">
+                                <input checked type="radio" name="radio" class="input-question">
+                                <p class="text-question">Гражданство РФ</p>
+                            </label>
+                            <label for="radio" class="label-question">
+                                <input type="radio" name="radio" class="input-question">
+                                <p class="text-question">РВП</p>
+                            </label>
+                            <label for="radio" class="label-question">
+                                <input type="radio" name="radio" class="input-question">
+                                <p class="text-question">Патент</p>
+                            </label>
+                            <label for="radio" class="label-question">
+                                <input type="radio" name="radio" class="input-question">
+                                <p class="text-question">ВНЖ</p>
+                            </label>
+                            <div class="wrapper-input">
+                                <input placeholder="Введите вашу страну" class="input form__input" type="text">
+                            </div>
+                        </div>
+                        <div class="from-btn">
+                            <button class="prev from-btn__nav btn btn-lighBlue">Назад</button>
+                            <button class="next from-btn__nav btn bg-red">Далее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Можно это не добавлять в компоменты? -->
+                <div class="steps__logo">
+                    <img src="./img/steps/logo-1.svg" alt="">
+                    <img src="./img/steps/logo-2.svg" alt="">
+                </div>
+                <!-- Можно это не добавлять в компоменты? -->
+                <div class="steps__advantages">
+                    <div class="advantages__element">
+                        <img src="./img/steps/advantages-1.svg" alt="">
+                        <p>15 лет<br>
+                            опыта</p>
+                    </div>
+                    <div class="advantages__element">
+                        <img src="./img/steps/advantages-2.svg" alt="">
+                        <p>Юридическая<br>
+                            поддержка</p>
+                    </div>
+                    <div class="advantages__element">
+                        <img src="./img/steps/advantages-3.svg" alt="">
+                        <p>Гарантированный<br>
+                            соцпакет</p>
+                    </div>
+                    <div class="advantages__element">
+                        <img src="./img/steps/advantages-4.svg" alt="">
+                        <p>Оформили более<br>
+                            30 000 мигрантов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;" class="last-step">
+            <div class="container">
+
+                <div class="steps__content">
+                    <h2 class="steps__title title">Оставьте свои контактные данные <br> и получите срочное оформление
+                        <br> миграционных документов
+                    </h2>
+
+                    <div class="form form-last">
+                        <div class="wrapper-input wrapper-input__last">
+                            <input placeholder="Ваше имя" class="input form__input" type="text">
+                        </div>
+                        <div class="wrapper-input">
+                            <input placeholder="Ваш телефон" class="input form__input" type="text">
+                        </div>
+                        <div class="from-btn form-btn__last">
+                            <button class="prev from-btn__nav btn btn-lighBlue">Назад</button>
+                            <button class="next from-btn__nav btn bg-red">Далее</button>
+                        </div>
+                        <p class="you-ok">Нажимая на кнопку, вы даете согласие на обработку персональных данных </p>
+                    </div>
+                </div>
+
+                <!-- Можно это не добавлять в компоменты? -->
+                <div class="last-logo">
+                    <img src="./img/steps/logo-1.svg" alt="">
+                    <img src="./img/steps/logo-2.svg" alt="">
+                </div>
+            </div>
+            <img class="china-town" src="./img/form-last-step/china-town.png" alt="">
+            <img class="china-town-mob" src="./img/form-last-step/china-town-mob.png" alt="">
+        </div>
+
+        <div style="display: none;" class="thanks">
+            <div class="thanks__main">
+                <h4 class="title-general thanks__title">Спасибо за ответы!</h4>
+                <p class="thanks__description">Наш юрист свяжется с вами<br>
+                    в ближайшее время</p>
+                <img src="./img/form-last-step/ok.png" alt="">
+            </div>
+        </div>
+
+        <!-- При ласт степе  - ПОДВАЛ скрывается -->
+        <footer>
+            <p class="footer__text">ИНН:2308282792</p>
+            <p class="footer__text">ОГРН:1212300068485</p>
+        </footer>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
