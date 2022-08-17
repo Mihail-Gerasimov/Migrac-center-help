@@ -110,6 +110,42 @@
     .thanks .thanks__main img {
         max-width: 70px;
     }
+
+    // modal
+    .modal {
+        max-width: 680px;
+        min-height: 500px;
+    }
+
+    .modal-thanks {
+        max-width: 310px;
+        min-height: 335px;
+
+        .modal-thanks-wrapper {
+            padding-top: 65px;
+        }
+    }
+
+    .title-modal {
+        margin-bottom: 20px;
+    }
+
+    .modal__descriprion {
+        font-size: 15px;
+        line-height: 18px;
+        max-width: 245px;
+    }
+
+    .modal-close {
+        top: 15px;
+        right: 15px;
+
+        img {
+            max-width: 15px;
+        }
+    }
+
+    // modal
 }
 
 @media screen and (max-width:991px) {
@@ -203,6 +239,10 @@
 
         .nav__btn {
             display: none;
+        }
+
+        .btn-mob {
+            display: block;
         }
     }
 
@@ -350,6 +390,17 @@
     .thanks {
         height: 60vh;
     }
+
+    // modal
+    .modal {
+        max-width: 310px;
+    }
+
+    .modal-form {
+        max-width: 280px;
+    }
+
+    // modal
 }
 
 @media screen and (max-width:575px) {
